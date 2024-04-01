@@ -28,7 +28,7 @@ const searchButton = document.querySelector(".search button");
 
         else {
             var data = await responce.json();
-            console.log(data);
+            // console.log(data);
 
             document.querySelector(".temp").innerHTML = Math.round(data.main.temp) + "°c";
             document.querySelector(".name").innerHTML = data.name + ", " + data.sys.country;
